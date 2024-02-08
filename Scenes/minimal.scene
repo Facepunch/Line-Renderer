@@ -1,0 +1,481 @@
+{
+  "Id": "9f832399-4887-46b0-8f21-2ee284f538e2",
+  "GameObjects": [
+    {
+      "Id": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
+      "Name": "Sun",
+      "Rotation": "-0.0729315,0.4822396,0.1305433,0.8631827",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "DirectionalLight",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.09553,0.1024,0.10698,1",
+          "Shadows": true,
+          "SkyColor": "0.08376,0.09614,0.10233,1"
+        }
+      ]
+    },
+    {
+      "Id": "00344a8c-fa5e-45ae-b12a-10bb781a1dc3",
+      "Name": "2D Skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "SkyBox2D",
+          "SkyMaterial": "materials/skybox/light_test_sky_sunny03.vmat",
+          "Tint": "0.02475,0.03267,0.05116,1"
+        },
+        {
+          "__type": "EnvmapProbe",
+          "Bounds": {
+            "Mins": "-512,-512,-512",
+            "Maxs": "512,512,512"
+          },
+          "Feathering": 0.02,
+          "Projection": "Sphere",
+          "Texture": "textures/cubemaps/default2.vtex",
+          "TintColor": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "6ad70641-3c6c-4402-9c85-9a4969af4764",
+      "Name": "Plane",
+      "Scale": "5,5,5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/default.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.39546,0.51163,0.27128,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,-5",
+          "IsTrigger": false,
+          "Scale": "100,100,10",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "3c2490ef-54a0-49bb-8f13-490e40aa51d1",
+      "Name": "Cube",
+      "Position": "21.41682,74.1244,14.40159",
+      "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
+      "Scale": "0.5632889,0.5632889,0.5632889",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/default.vmat",
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,0.93333,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "Rigidbody",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {},
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "Id": "523e3e8f-a4ec-4ec1-af9a-d86ffc9c17e1",
+      "Name": "Cube (1)",
+      "Position": "40.81348,46.97572,14.40159",
+      "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
+      "Scale": "0.5632889,0.5632889,0.5632889",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/default.vmat",
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,0.93333,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "Rigidbody",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {},
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "Id": "5b483a09-bbf2-4949-98c7-a73b789d0ee7",
+      "Name": "Cube (2)",
+      "Position": "49.53707,34.08896,43.67614",
+      "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
+      "Scale": "0.5632889,0.5632889,0.5632889",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/default.vmat",
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,0.93333,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "Rigidbody",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {},
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "Id": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+      "Name": "Camera",
+      "Position": "-571.1832,-854.6627,383.1006",
+      "Rotation": "-0.05825042,0.1058667,0.4785373,0.8697133",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "CameraComponent",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        },
+        {
+          "__type": "Bloom",
+          "BloomColor": {
+            "color": [
+              {
+                "c": "1,1,1,1"
+              },
+              {
+                "t": 1,
+                "c": "1,1,1,1"
+              }
+            ],
+            "alpha": []
+          },
+          "BloomCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "Mode": "Additive",
+          "Strength": 0.5,
+          "Threshold": 0.5,
+          "ThresholdWidth": 0.5
+        },
+        {
+          "__type": "Tonemapping",
+          "ExposureCompensation": 0,
+          "MaximumExposure": 2,
+          "MinimumExposure": 1,
+          "Rate": 1
+        },
+        {
+          "__type": "Sharpen",
+          "Scale": 0.2
+        }
+      ]
+    },
+    {
+      "Id": "dd8ea936-a44b-4dfe-a219-189042631a76",
+      "Name": "Line Renderer",
+      "Position": "-203.2121,20.04221,62.24098",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "LineRenderTest",
+          "Color": {
+            "color": [
+              {
+                "t": 0.5,
+                "c": "0,1,1,1"
+              }
+            ],
+            "alpha": []
+          },
+          "EndCap": "Arrow",
+          "Jubble": false,
+          "Noising": 2,
+          "Octaves": 2,
+          "Opaque": true,
+          "Points": [
+            "13.76,0,0",
+            "50.44622,36.59668,-0.00000796453",
+            "85.19405,28.24601,0.00001015374",
+            "102.4187,-11.19478,0.000002680939",
+            "90.3761,-60.6602,-0.0000008371429"
+          ],
+          "Smoothness": 0,
+          "Speed": 1,
+          "StartCap": "Rounded",
+          "Width": [
+            {
+              "y": 1
+            }
+          ],
+          "Wireframe": false
+        }
+      ]
+    },
+    {
+      "Id": "ff1185b3-d97d-421e-a385-ec7b00857945",
+      "Name": "Line Renderer 2",
+      "Position": "-96.55404,-140.6456,62.24126",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "LineRenderTest",
+          "Color": {
+            "color": [
+              {
+                "c": "5,3.41667,0,1"
+              },
+              {
+                "t": 0.982906,
+                "c": "5,0,0,1"
+              }
+            ],
+            "alpha": []
+          },
+          "EndCap": "Arrow",
+          "Jubble": false,
+          "Noising": 2,
+          "Octaves": 2,
+          "Opaque": true,
+          "Points": [
+            "46.31591,0,-56.42097",
+            "50.44622,36.59668,-0.00000796453",
+            "85.19405,28.24601,0.00001015374",
+            "102.4187,-11.19478,0.000002680939",
+            "90.3761,-60.6602,-0.0000008371429",
+            "25.91704,-68.38333,0.00003673439",
+            "-7.138132,-57.45733,0.00008728261",
+            "-39.18042,-85.24898,-52.72286",
+            "-29.64872,-39.70329,-44.61361",
+            "-68.9993,-17.67351,-21.24726",
+            "-41.04526,0.0000006958734,-2.394632"
+          ],
+          "Smoothness": 16,
+          "Speed": 1,
+          "StartCap": "Arrow",
+          "Width": [
+            {
+              "y": 1
+            }
+          ],
+          "Wireframe": false
+        }
+      ]
+    },
+    {
+      "Id": "fba006ed-fc3b-4016-b0cd-b43991ed02cf",
+      "Name": "Line Renderer 2 (1)",
+      "Position": "-94.31398,-280.4857,62.24126",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "LineRenderTest",
+          "Color": {
+            "color": [
+              {
+                "c": "5,3.41667,0,1"
+              },
+              {
+                "t": 0.982906,
+                "c": "5,0,0,1"
+              }
+            ],
+            "alpha": []
+          },
+          "EndCap": "Arrow",
+          "Jubble": false,
+          "Noising": 2,
+          "Octaves": 2,
+          "Opaque": true,
+          "Points": [
+            "46.31591,0,-56.42097",
+            "50.44622,36.59668,-0.00000796453",
+            "85.19405,28.24601,0.00001015374",
+            "102.4187,-11.19478,0.000002680939",
+            "90.3761,-60.6602,-0.0000008371429",
+            "25.91704,-68.38333,0.00003673439",
+            "-7.138132,-57.45733,0.00008728261",
+            "-39.18042,-85.24898,-52.72286",
+            "-29.64872,-39.70329,-44.61361",
+            "-68.9993,-17.67351,-21.24726",
+            "-41.04526,0.0000006958734,-2.394632"
+          ],
+          "Smoothness": 16,
+          "Speed": 1,
+          "StartCap": "Arrow",
+          "Width": [
+            {
+              "y": 1
+            }
+          ],
+          "Wireframe": true
+        }
+      ]
+    },
+    {
+      "Id": "16950599-9852-49ef-b30d-1f0e5e6fb8fb",
+      "Name": "Line Renderer Jubble",
+      "Position": "109.5091,157.1999,106.5536",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "LineRenderTest",
+          "Color": {
+            "color": [
+              {
+                "c": "5,5,5,1"
+              },
+              {
+                "t": 0.023504274,
+                "c": "5,3.41667,0,1"
+              },
+              {
+                "t": 0.057692308,
+                "c": "4.02326,0.67054,0,1"
+              },
+              {
+                "t": 0.69017094,
+                "c": "0.2186,0.03643,0,0.89"
+              },
+              {
+                "t": 1,
+                "c": "0.30233,0,0,0"
+              }
+            ],
+            "alpha": []
+          },
+          "EndCap": "Rounded",
+          "Jubble": true,
+          "Noising": 2,
+          "Octaves": 2,
+          "Opaque": true,
+          "Points": [],
+          "Smoothness": 16,
+          "Speed": 3,
+          "StartCap": "Arrow",
+          "Width": {
+            "rangey": "0,2",
+            "frames": [
+              {
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 0.2925532
+              }
+            ]
+          },
+          "Wireframe": false
+        }
+      ]
+    },
+    {
+      "Id": "17fd54ed-f6a5-4156-9a48-f97c1663386b",
+      "Name": "Text",
+      "Position": "146.0473,950.4022,155.1369",
+      "Rotation": "0,0,0.7071068,0.7071069",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "TextRenderer",
+          "Color": "0,0,0,0.32",
+          "FontFamily": "Poppins",
+          "FontSize": 128,
+          "Scale": 0.56,
+          "Text": "missing features\n\n1. No stitching when smoothed\n2. No textures\n3. No lighting"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "minimal",
+  "Description": "",
+  "LastSaved": "2024-02-08T14:00:35.7939759\u002B00:00",
+  "__references": []
+}
